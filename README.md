@@ -1,33 +1,57 @@
-# Medical-Imaging-AI-Integration
+# Medical Imaging AI Integration
 
-# Project Intro:
-Medical Imaging AI Integration is a cutting-edge software application that helps healthcare professionals analyze medical images such as X-rays, MRIs, and CT scans. The application leverages artificial intelligence to detect abnormalities, suggest diagnoses, and visually highlight key areas of interest in the images, assisting doctors in making faster, more accurate decisions.
+## Project Description
 
-The platform integrates securely with hospital systems, allowing users to upload, view, and annotate medical images while benefiting from AI-powered insights. This system is designed to improve the accuracy and efficiency of healthcare workflows by automating image analysis and generating diagnostic reports.
+This project is a web-based or desktop application that allows medical professionals (radiologists, doctors, technicians) to upload medical images—such as X-rays, MRIs, or CT scans—and receive AI-assisted diagnostics and annotations. The system integrates a trained AI model (e.g., a convolutional neural network) that detects anomalies or diseases (e.g., tumors, fractures, pneumonia) and provides visual indicators and probability scores to help doctors make decisions faster and more accurately.
 
-# Feature List:
-**AI-based Image Analysis:** Automatically analyzes medical images and detects abnormalities (e.g., tumors, fractures) using AI models.
+## Key Features
 
-**Image Upload & Management:** Upload medical images (DICOM, JPEG, PNG) with metadata (e.g., scan date, modality).
+- **Upload and store medical images securely.**
+- **Run AI-based analysis on images.**
+- **Display results visually (heatmaps, bounding boxes, or labels).**
+- **Provide diagnosis suggestions with confidence scores.**
+- **Maintain patient history with previous image results.**
+- **Multi-user roles: Doctors, Radiologists, Admin.**
+- **Option to export or share reports.**
+- **Integration with hospital systems (optional stretch goal).**
 
-**Confidence Scores:** Provides confidence levels for AI-based predictions to assist in decision-making.
+##  Story Cards (User Stories)
 
-**Result Visualization:** Visual highlights on images (e.g., bounding boxes, heatmaps) to indicate areas of concern.
+### Doctor User Stories
+- **As a doctor, I want to upload a patient's medical image so I can get an AI-based analysis.**
+- **As a doctor, I want to see highlighted problem areas (e.g., tumors, fractures) on the image.**
+- **As a doctor, I want the AI to give me a diagnosis suggestion with a confidence percentage.**
+- **As a doctor, I want to compare AI results with previous scans of the same patient.**
+- **As a doctor, I want to download a report of the AI analysis in PDF format.**
 
-**Reporting & Export:** Generates PDF reports with AI-based analysis and allows users to add personal notes before exporting.
+### AI Analysis Stories
+- **As an AI system, I want to process medical images and identify abnormalities.**
+- **As an AI system, I want to display confidence scores for each possible condition.**
+- **As an AI system, I want to visually mark areas of interest on the medical image.**
 
-**Patient History:** Tracks and compares images and results from previous scans of the same patient.
+### Image Management Stories
+- **As a user, I want to upload JPEG, PNG, or DICOM files.**
+- **As a user, I want to view a history of uploaded scans.**
+- **As a user, I want to filter scans by date or patient name.**
 
-**User Roles & Permissions:** Multiple roles (e.g., doctor, admin) with specific access rights to features and data.
+###  Security & Roles
+- **As an admin, I want to manage user roles (doctor, radiologist, admin).**
+- **As a user, I want to log in securely using my hospital credentials.**
+- **As an admin, I want to ensure all image data is stored securely and encrypted.**
 
-**Security:** User authentication, secure data storage, and encryption of sensitive information.
+### Reporting & Output
+- **As a doctor, I want to receive a diagnostic report that summarizes the AI results.**
+- **As a user, I want to export results to PDF or email them to another doctor.**
+- **As a doctor, I want the ability to add manual notes to the AI-generated report.**
 
-**Feedback System:** Collects feedback on AI analysis accuracy to continuously improve the model's performance.
+### Testing & Feedback
+- **As a developer, I want to test the AI model against known image datasets.**
+- **As a doctor, I want to give feedback on the accuracy of AI suggestions.**
+- **As a user, I want to mark AI predictions as “Correct” or “Incorrect” to help improve the system.**
 
-**Notifications:** Sends notifications for key events, such as when an AI analysis is complete or when errors occur.
+### Optional Stretch Features
+- **As a hospital IT admin, I want to integrate the system with the hospital’s EMR (Electronic Medical Records).**
+- **As a user, I want the app to support multiple languages.**
+- **As an admin, I want analytics on how many scans are processed daily/weekly.**
 
-**Admin Panel:** Admin interface to manage users, monitor system performance, and configure AI settings.
 
-**Multilingual Support:** The platform supports multiple languages for broader accessibility.
-
-**Integration:** Optional integration with hospital EMR (Electronic Medical Records) systems.
